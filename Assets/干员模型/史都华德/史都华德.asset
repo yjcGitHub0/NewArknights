@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0c3c45b4a547140bca8625c627546d, type: 3}
+  m_Name: "\u53F2\u90FD\u534E\u5FB7"
+  m_EditorClassIdentifier: 
+  type: 2
+  skillType: 2
+  Name: "\u53F2\u90FD\u534E\u5FB7"
+  EnName: 
+  Description:
+  - "\u4F18\u5148\u653B\u51FB\u8303\u56F4\u5185\u9632\u5FA1\u529B\u6700\u9AD8\u7684\u654C\u4EBA"
+  - "\u4F18\u5148\u653B\u51FB\u8303\u56F4\u5185\u9632\u5FA1\u529B\u6700\u9AD8\u7684\u654C\u4EBA"
+  - "\u4F18\u5148\u653B\u51FB\u8303\u56F4\u5185\u9632\u5FA1\u529B\u6700\u9AD8\u7684\u654C\u4EBA"
+  is3D: 0
+  isMedical: 0
+  canAtkDrone: 1
+  banLowGround: 1
+  banHighGround: 0
+  imageInQueue: {fileID: 21300000, guid: 8ddc61e90bae9bc4298fc19f73e3ec76, type: 3}
+  imageInDrag: {fileID: 21300000, guid: ddc04a7db836d6142b2d007ba1e98ed6, type: 3}
+  imageInDragBack: {fileID: 21300000, guid: 9336d4c6bf2178d4d8aaff78131eb14b, type: 3}
+  operUIImage1: {fileID: 21300000, guid: b50eae75e4697554fa9fb355d6e2304c, type: 3}
+  operUIImage2: {fileID: 21300000, guid: b50eae75e4697554fa9fb355d6e2304c, type: 3}
+  operPrefab: {fileID: 4364586788880991495, guid: 7788543736eb23c4bb048fd5a8b1a301, type: 3}
+  Report: {fileID: 8300000, guid: 31cb1c68f9e246f47bbf531c1dc9c06e, type: 3}
+  LevelUP: {fileID: 8300000, guid: e63a854b693c170458e2636e7c6993c1, type: 3}
+  ElitismUP:
+  - {fileID: 8300000, guid: 9efa4ce3af9e0764aad047efc650cc96, type: 3}
+  - {fileID: 8300000, guid: 0230cb61c6d259f42ba1f75b2b6b9c6e, type: 3}
+  Join:
+  - {fileID: 8300000, guid: c9336b6651b8a664cab9d8d754acb540, type: 3}
+  - {fileID: 8300000, guid: 90475ec3b20445347bd4465e1d46eb12, type: 3}
+  Leave: {fileID: 8300000, guid: d82104f34c7fbe046a0e081872854b8f, type: 3}
+  Begin: {fileID: 8300000, guid: 75ccadfe3017ce94cb67adebcf4120a9, type: 3}
+  Selected:
+  - {fileID: 8300000, guid: 621e586093477f442959bb2c465f8753, type: 3}
+  - {fileID: 8300000, guid: 98c117b06484d1542abd9276c9e22ef5, type: 3}
+  Deploy:
+  - {fileID: 8300000, guid: 7a509792b4b2dc646afb1e0b86f6d7d5, type: 3}
+  - {fileID: 8300000, guid: 80088127776592f40a7f81abe4c73909, type: 3}
+  Fighting:
+  - {fileID: 8300000, guid: b6d05bdfd8541d04aa392f157c3e164e, type: 3}
+  - {fileID: 8300000, guid: ba2660541750f1f488ed07043bd168f1, type: 3}
+  End_4Star: {fileID: 8300000, guid: efc9e59e4093a5c42b88c7e19e9cdd86, type: 3}
+  End_3Star: {fileID: 8300000, guid: e97cc08252a22474f8e306a2dbe687a4, type: 3}
+  End_Not3Star: {fileID: 8300000, guid: 8772f77f9ab1d3e44871449ade372fda, type: 3}
+  End_Fail: {fileID: 8300000, guid: 60dcfce6dde426d4d9125337e6006c12, type: 3}
+  Touch: {fileID: 8300000, guid: e4a966cf858bf784691809007076b4e7, type: 3}
+  atk: 20
+  def: 0
+  magicDef: 0
+  life: 1000
+  maxBlock: 0
+  cost: 0
+  consumPlace: 0
+  reTime: 0
+  maxLevel: 000000000000000000000000
+  growingAtk:
+  - 0
+  - 0
+  - 0
+  growingDef:
+  - 0
+  - 0
+  - 0
+  growingLife:
+  - 0
+  - 0
+  - 0
+  elitismAtk:
+  - 0
+  - 0
+  elitismDef:
+  - 0
+  - 0
+  elitismLife:
+  - 0
+  - 0
+  elitismMagicDef:
+  - 0
+  - 0
+  elitismBlock: 0000000000000000
+  elitismExp: 0000000000000000
+  elitismCost: 0000000000000000
+  atkRange:
+  - {fileID: 6645886670027540070, guid: 519f9df20952ce04881a6ddc8faaad46, type: 3}
+  - {fileID: 6645886670027540070, guid: 519f9df20952ce04881a6ddc8faaad46, type: 3}
+  - {fileID: 6645886670027540070, guid: 519f9df20952ce04881a6ddc8faaad46, type: 3}
+  atkRangeImage:
+  - {fileID: 21300000, guid: 02bffe9ce9e5d3f48ba08531d0d28e83, type: 3}
+  - {fileID: 21300000, guid: 02bffe9ce9e5d3f48ba08531d0d28e83, type: 3}
+  - {fileID: 21300000, guid: 02bffe9ce9e5d3f48ba08531d0d28e83, type: 3}
+  illustratedBookImage: {fileID: 21300000, guid: 7be76fe387c28c447bfa60cf4f7ad80e, type: 3}
+  profession: 3
+  skillImage:
+  - {fileID: 21300000, guid: ff783ad799e1a9e4bad6a17d1cb54b6f, type: 3}
+  - {fileID: 21300000, guid: 0016c59bd162e664e9674aff92bec385, type: 3}
+  - {fileID: 21300000, guid: 7139d0bd07ee5e54c988854289812d1f, type: 3}
+  skillName0: "\u653B\u51FB\u529B\u63D0\u5347"
+  description0:
+  - "\u653B\u51FB\u529B\u63D0\u5347<color=#00BFFF>30%</color>"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  initSP0: 00000000000000000000000000000000000000000000000000000000
+  maxSP0: 00000000000000000000000000000000000000000000000000000000
+  duration0:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  expNeed0: 000000000000000000000000000000000000000000000000
+  costNeed0: 000000000000000000000000000000000000000000000000
+  skill0_recoverType: 0
+  skill0_releaseType: 0
+  skillName1: "\u8FFD\u9B42\u6CD5\u5F39"
+  description1:
+  - "\u4E0B\u6B21\u653B\u51FB\u989D\u5916\u53D1\u5C04\u4E00\u679A\u9B54\u6CD5\u5BFC\u5F39\uFF0C\u5728\u5168\u5C4F\u8303\u56F4\u5185<color=#FFFF00>\u8FFD\u51FB</color>\u9632\u5FA1\u529B\u6700\u9AD8\u7684\u654C\u4EBA\uFF0C\u9020\u6210<color=#00BFFF>150%</color>\u653B\u51FB\u529B\u7684\u9B54\u6CD5\u4F24\u5BB3\u3002\u9B54\u6CD5\u5BFC\u5F39\u547D\u4E2D\u654C\u4EBA\u540E\u4F1A\u5728\u539F\u5730\u7559\u4E0B\u4E00\u9897\u805A\u7206\u6838\u5FC3\uFF0C\u77ED\u6682\u5EF6\u8FDF\u540E\u5BF9\u5468\u56F4\u7684\u654C\u4EBA\u9020\u6210<color=#00BFFF>150%</color>\u653B\u51FB\u529B\u7684\u9B54\u6CD5\u4F24\u5BB3\u3002"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  initSP1: 00000000000000000000000000000000000000000000000000000000
+  maxSP1: 01000000000000000000000000000000000000000000000000000000
+  duration1:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  expNeed1: 000000000000000000000000000000000000000000000000
+  costNeed1: 000000000000000000000000000000000000000000000000
+  skill1_recoverType: 1
+  skill1_releaseType: 0
+  skillName2: "\u98CE\u96EA\u98D8\u96F6"
+  description2:
+  - "\u53F2\u90FD\u534E\u5FB7\u4E3E\u8D77\u6CD5\u6756\uFF0C\u653B\u51FB\u95F4\u9694<color=#00BFFF>\u6781\u5927\u5E45\u5EA6\u7F29\u77ED</color>\uFF0C\u653B\u51FB\u6539\u4E3A\u53D1\u5C04\u5FAE\u578B\u9B54\u6CD5\u5F39\uFF0C<color=#FFFF00>\u8FFD\u51FB</color>\u5168\u5C4F\u8303\u56F4\u5185\u7684<color=#FF0000>\u968F\u673A</color>\u654C\u4EBA\uFF0C\u5E76\u5728\u547D\u4E2D\u65F6\u9020\u6210<color=#00BFFF>30%</color>\u653B\u51FB\u529B\u7684\u9B54\u6CD5\u4F24\u5BB3"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  initSP2: 00000000000000000000000000000000000000000000000000000000
+  maxSP2: 00000000000000000000000000000000000000000000000000000000
+  duration2:
+  - 10
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  expNeed2: 000000000000000000000000000000000000000000000000
+  costNeed2: 000000000000000000000000000000000000000000000000
+  skill2_recoverType: 0
+  skill2_releaseType: 0

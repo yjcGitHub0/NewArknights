@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0c3c45b4a547140bca8625c627546d, type: 3}
+  m_Name: defaultOperData
+  m_EditorClassIdentifier: 
+  type: 1
+  skillType: 0
+  Name: 
+  EnName: 
+  Description:
+  - 
+  - 
+  - 
+  is3D: 0
+  isMedical: 0
+  canAtkDrone: 0
+  banLowGround: 0
+  banHighGround: 0
+  imageInQueue: {fileID: 0}
+  imageInDrag: {fileID: 0}
+  imageInDragBack: {fileID: 0}
+  operUIImage1: {fileID: 0}
+  operUIImage2: {fileID: 0}
+  operPrefab: {fileID: 0}
+  atk: 0
+  def: 0
+  magicDef: 0
+  life: 0
+  maxBlock: 0
+  cost: 0
+  consumPlace: 0
+  reTime: 0
+  maxLevel: 000000000000000000000000
+  growingAtk:
+  - 0
+  - 0
+  - 0
+  growingDef:
+  - 0
+  - 0
+  - 0
+  growingLife:
+  - 0
+  - 0
+  - 0
+  elitismAtk:
+  - 0
+  - 0
+  elitismDef:
+  - 0
+  - 0
+  elitismLife:
+  - 0
+  - 0
+  elitismMagicDef:
+  - 0
+  - 0
+  elitismBlock: 0000000000000000
+  elitismExp: 0000000000000000
+  elitismCost: 0000000000000000
+  atkRange:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  atkRangeImage:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  illustratedBookImage: {fileID: 0}
+  profession: 0
+  skillImage:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  skillName0: 
+  description0:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  initSP0: 00000000000000000000000000000000000000000000000000000000
+  maxSP0: 00000000000000000000000000000000000000000000000000000000
+  duration0:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  expNeed0: 000000000000000000000000000000000000000000000000
+  costNeed0: 000000000000000000000000000000000000000000000000
+  skill0_recoverType: 0
+  skill0_releaseType: 0
+  skillName1: 
+  description1:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  initSP1: 00000000000000000000000000000000000000000000000000000000
+  maxSP1: 00000000000000000000000000000000000000000000000000000000
+  duration1:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  expNeed1: 000000000000000000000000000000000000000000000000
+  costNeed1: 000000000000000000000000000000000000000000000000
+  skill1_recoverType: 0
+  skill1_releaseType: 0
+  skillName2: 
+  description2:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  initSP2: 00000000000000000000000000000000000000000000000000000000
+  maxSP2: 00000000000000000000000000000000000000000000000000000000
+  duration2:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  expNeed2: 000000000000000000000000000000000000000000000000
+  costNeed2: 000000000000000000000000000000000000000000000000
+  skill2_recoverType: 0
+  skill2_releaseType: 0

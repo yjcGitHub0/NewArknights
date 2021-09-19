@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7199086535174377581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7199086535174377583}
+  - component: {fileID: 7199086535174377580}
+  - component: {fileID: 6128536861849086501}
+  - component: {fileID: 2941817046220985964}
+  - component: {fileID: 7839474150662841328}
+  m_Layer: 0
+  m_Name: initManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7199086535174377583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7199086535174377581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 168.1629, y: 122.44644, z: -41.323788}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7199086535174377580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7199086535174377581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cd152d730c194f42affb2e0710c52d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 10
+  exp: 0
+  maxLife: 3
+  remainPlace: 5
+  enemyDelay: 3
+  operList: []
+  ECList: []
+  appearOrder: []
+  sceneCanAtkEnemyList: []
+  slot: {fileID: 0}
+  mainCanvas: {fileID: 0}
+  operPanel: {fileID: 0}
+  camera: {fileID: 0}
+  cost_: {fileID: 0}
+  exp_: {fileID: 0}
+  slotList: []
+  uc_: {fileID: 0}
+  draging: 0
+  life: 0
+  totEnemy: 0
+  defeatEnemy: 0
+  priority: 0
+  blueDoorPathList: []
+  startPointList: []
+--- !u!114 &6128536861849086501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7199086535174377581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba3aa135e87da2a49bd243baa78706ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showingOper_cd: {fileID: 0}
+  showingOper_oc: {fileID: 0}
+  openingCd: 0
+  openingOc: 0
+  closeDelay: 0
+  dontCloseUI: 0
+  showingSP_: {fileID: 0}
+  showingSPText: {fileID: 0}
+  showingGreenSlider: {fileID: 0}
+  showingYellowSlider: {fileID: 0}
+  messagePanel: {fileID: 0}
+  messageText: {fileID: 0}
+  costText: {fileID: 0}
+  expText: {fileID: 0}
+  placeText: {fileID: 0}
+  lifeText: {fileID: 0}
+  enemyText: {fileID: 0}
+  costSlider: {fileID: 0}
+  LeftUIPanel: {fileID: 0}
+  operImage: {fileID: 0}
+  elitismButton: {fileID: 0}
+  nameText: {fileID: 0}
+  EnNameText: {fileID: 0}
+  levelText: {fileID: 0}
+  atkText: {fileID: 0}
+  defText: {fileID: 0}
+  magicDefText: {fileID: 0}
+  blockText: {fileID: 0}
+  lifeSlider: {fileID: 0}
+  lifeSliderText: {fileID: 0}
+  skillChoose:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  skillLevelUP:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  greenHook:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  skillLevelText:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  descriptionText: {fileID: 0}
+  recoverTypeImage: {fileID: 0}
+  releaseTypeImage: {fileID: 0}
+  topNameText: {fileID: 0}
+  bottomDescriptionText: {fileID: 0}
+  duringText: {fileID: 0}
+  expNeedText: {fileID: 0}
+  costNeedText: {fileID: 0}
+  leftInitSPText: {fileID: 0}
+  leftMaxSPText: {fileID: 0}
+--- !u!114 &2941817046220985964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7199086535174377581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7986ad9b3ac20b941983ecce27048cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxCostTime: 0
+  costTime: 0
+  cost: 0
+  speedDetaList: []
+--- !u!114 &7839474150662841328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7199086535174377581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c13307875154b45907a82e536fbe85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exp: 0

@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7950020390721012614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2931207856451423983}
+  - component: {fileID: 2967634753439058757}
+  m_Layer: 0
+  m_Name: poolManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2931207856451423983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7950020390721012614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0502467, y: 6.2895308, z: -3.2661595}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2967634753439058757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7950020390721012614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a1d4b8c3205be4ca8850367c183e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kroos_arrow_pool:
+    prefab: {fileID: 2669370693274179577, guid: 5f6a73561d18ffb4f826a06d65dc3071, type: 3}
+  kroos_norBoom_pool:
+    prefab: {fileID: 8929166077222470767, guid: 947d7f8b8d127204bbd66bd4a1b38928, type: 3}
+  kroos_Crit_yellow_pool:
+    prefab: {fileID: 6939930489821825814, guid: a9f99db1c6a56d2458a7e5f73195d9ae, type: 3}
+  Molotov_Cocktail_pool:
+    prefab: {fileID: 4412151296941489354, guid: 28fa23c00253f064b969c084bdef5fed, type: 3}
+  Magic_bullet_pool:
+    prefab: {fileID: 6707641254996703217, guid: a5b0444b5f3d9334384c1afc7dd4383d, type: 3}
+  Ansel_Bandage_pool:
+    prefab: {fileID: 3132858584221965647, guid: 9ab7c3e1b48609b47a80f1d4ad52aa77, type: 3}
+  Shining_Defense_pool:
+    prefab: {fileID: 122498, guid: 5f20420a36c817f4f8328369cb4883a8, type: 3}
+  Track_Magic_Fire_pool:
+    prefab: {fileID: 135146, guid: 25721e379fc1b524fa1fa24902200314, type: 3}
+  Surrounding_Particles_pool:
+    prefab: {fileID: 127686, guid: 39d083a5f8e95874fb6aa07cb8a3beb2, type: 3}
+  Big_Track_Magic_Fire_pool:
+    prefab: {fileID: 110298, guid: 73801c8e4cab0e74590a78faebaaacae, type: 3}
+  Steward_Boom_pool:
+    prefab: {fileID: 193692, guid: 061303505c4fd17458f5e0ddd245a72e, type: 3}
+  Healing_pool:
+    prefab: {fileID: 187180, guid: 4bb5f0056ec0fa54abf14bb8378c80ee, type: 3}

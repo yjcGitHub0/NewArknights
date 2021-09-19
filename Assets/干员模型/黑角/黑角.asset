@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0c3c45b4a547140bca8625c627546d, type: 3}
+  m_Name: "\u9ED1\u89D2"
+  m_EditorClassIdentifier: 
+  type: 2
+  skillType: 2
+  Name: "\u9ED1\u89D2"
+  EnName: Noir Corne
+  Description:
+  - "\u9ED1\u89D2\u5728\u573A\u4E0A\u65F6\uFF0C\u9F99\u95E8\u5E01\u7684\u81EA\u7136\u56DE\u590D\u901F\u5EA6\u63D0\u5347<color=#00BFFF>10%</color>"
+  - "\u9ED1\u89D2\u5728\u573A\u4E0A\u65F6\uFF0C\u9F99\u95E8\u5E01\u7684\u81EA\u7136\u56DE\u590D\u901F\u5EA6\u63D0\u5347<color=#00BFFF>10%</color>"
+  - "\u9ED1\u89D2\u5728\u573A\u4E0A\u65F6\uFF0C\u9F99\u95E8\u5E01\u7684\u81EA\u7136\u56DE\u590D\u901F\u5EA6\u63D0\u5347<color=#00BFFF>15%</color>"
+  is3D: 0
+  isMedical: 0
+  canAtkDrone: 0
+  banLowGround: 0
+  banHighGround: 1
+  imageInQueue: {fileID: 21300000, guid: 5237f50fb7d351a40b49bc7c1beb5f55, type: 3}
+  imageInDrag: {fileID: 21300000, guid: de31a5f7c46664c4ba7dd6cf3a398be0, type: 3}
+  imageInDragBack: {fileID: 21300000, guid: 6952b12aa017b0445b1a37fba5a0d1c8, type: 3}
+  operUIImage1: {fileID: 21300000, guid: c5a9368f9dc042d44b91ac6e7f468f3c, type: 3}
+  operUIImage2: {fileID: 21300000, guid: c5a9368f9dc042d44b91ac6e7f468f3c, type: 3}
+  operPrefab: {fileID: 3891507022786426530, guid: 8effe578182f65349a423bf1b750b3f8, type: 3}
+  Report: {fileID: 8300000, guid: 5a3cd468cf4428c4b93fdd28c965f907, type: 3}
+  LevelUP: {fileID: 8300000, guid: d900bc9dae2776d4883e8ca5d63d8e68, type: 3}
+  ElitismUP:
+  - {fileID: 8300000, guid: 643af76a2e459a741b2bd40fc307bb2c, type: 3}
+  - {fileID: 8300000, guid: 1baeb6292b7de6d40b5947178922f9d4, type: 3}
+  Join:
+  - {fileID: 8300000, guid: 454d673ad2541aa49a2496b83951a694, type: 3}
+  - {fileID: 8300000, guid: eb01e8a3b21b641448e8f81e6778de2a, type: 3}
+  Leave: {fileID: 8300000, guid: 333bfbc00ab5b664793c96cfd4bb41d7, type: 3}
+  Begin: {fileID: 8300000, guid: e6645c35843240b43a5667872915302f, type: 3}
+  Selected:
+  - {fileID: 8300000, guid: a3d4ae05006b4084dbab93aee5b0e4d7, type: 3}
+  - {fileID: 8300000, guid: 697ea4e21a69ab341836471a5d2741cd, type: 3}
+  Deploy:
+  - {fileID: 8300000, guid: 9a4bf1274ff009e4e9c403a391790961, type: 3}
+  - {fileID: 8300000, guid: 78d223f0273497a4cb3916319b356bb4, type: 3}
+  Fighting:
+  - {fileID: 8300000, guid: fa8a74705a8fa3a4880479fe21172e46, type: 3}
+  - {fileID: 8300000, guid: adb2f5b36ea7979448ce99cba2a73ea9, type: 3}
+  End_4Star: {fileID: 8300000, guid: 5defca99e49f41d498fdeaa7cfa86b7e, type: 3}
+  End_3Star: {fileID: 8300000, guid: af3c024d0f30649449f8f05c93569717, type: 3}
+  End_Not3Star: {fileID: 8300000, guid: 4b7f2410ffd19214782d07cb28beb6c6, type: 3}
+  End_Fail: {fileID: 8300000, guid: 256a5194d1a060644bd4a987f0331f9a, type: 3}
+  Touch: {fileID: 8300000, guid: 6d0164ffe21843540a8faaf8048a592f, type: 3}
+  atk: 2
+  def: 100
+  magicDef: 0
+  life: 500
+  maxBlock: 3
+  cost: 5
+  consumPlace: 1
+  reTime: 3
+  maxLevel: 32000000500000005a000000
+  growingAtk:
+  - 1
+  - 0
+  - 0
+  growingDef:
+  - 0
+  - 0
+  - 0
+  growingLife:
+  - 10
+  - 0
+  - 0
+  elitismAtk:
+  - 0
+  - 0
+  elitismDef:
+  - 0
+  - 0
+  elitismLife:
+  - 0
+  - 0
+  elitismMagicDef:
+  - 0
+  - 0
+  elitismBlock: 0000000000000000
+  elitismExp: 0000000000000000
+  elitismCost: 0000000000000000
+  atkRange:
+  - {fileID: 6645886670027540070, guid: d32ebb57acceb4d48b9703b62ea0a57f, type: 3}
+  - {fileID: 6645886670027540070, guid: d32ebb57acceb4d48b9703b62ea0a57f, type: 3}
+  - {fileID: 6645886670027540070, guid: d32ebb57acceb4d48b9703b62ea0a57f, type: 3}
+  atkRangeImage:
+  - {fileID: 21300000, guid: 3e60d19608853fc478497eee639e4352, type: 3}
+  - {fileID: 21300000, guid: 3e60d19608853fc478497eee639e4352, type: 3}
+  - {fileID: 21300000, guid: 3e60d19608853fc478497eee639e4352, type: 3}
+  illustratedBookImage: {fileID: 21300000, guid: ea806980b076f974382d8469c43bdb8d, type: 3}
+  profession: 5
+  skillImage:
+  - {fileID: 21300000, guid: ff783ad799e1a9e4bad6a17d1cb54b6f, type: 3}
+  - {fileID: 21300000, guid: 980c0d532078fcb43aabc9e4f68bff2c, type: 3}
+  - {fileID: 21300000, guid: 7139d0bd07ee5e54c988854289812d1f, type: 3}
+  skillName0: "\u9632\u5FA1\u529B\u63D0\u5347a\u578B"
+  description0:
+  - "\u9632\u5FA1\u529B\u63D0\u5347<color=#00BFFF>20%</color>"
+  - "\u9632\u5FA1\u529B\u63D0\u5347<color=#00BFFF>25%</color>"
+  - "\u9632\u5FA1\u529B\u63D0\u5347<color=#00BFFF>30%</color>"
+  - "\u9632\u5FA1\u529B\u63D0\u5347<color=#00BFFF>35%</color>"
+  - "\u9632\u5FA1\u529B\u63D0\u5347<color=#00BFFF>40%</color>"
+  - "\u9632\u5FA1\u529B\u63D0\u5347<color=#00BFFF>45%</color>"
+  - "\u9632\u5FA1\u529B\u63D0\u5347<color=#00BFFF>50%</color>"
+  initSP0: 05000000060000000700000008000000090000000a0000000b000000
+  maxSP0: 14000000130000001200000011000000100000000f0000000e000000
+  duration0:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  expNeed0: 010000000200000003000000040000000500000006000000
+  costNeed0: 010000000200000003000000040000000500000006000000
+  skill0_recoverType: 0
+  skill0_releaseType: 1
+  skillName1: "\u9B3C\u9762\u5486\u54EE"
+  description1:
+  - "\u9ED1\u89D2\u53D1\u51FA\u9707\u8033\u6B32\u804B\u7684\u6012\u543C\uFF0C\u4F7F\u5468\u56F4\u7684\u654C\u4EBA\u9677\u5165\u6301\u7EED<color=#00BFFF>5</color>\u79D2\u7684\u6050\u60E7\u72B6\u6001"
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  initSP1: 00000000000000000000000000000000000000000000000000000000
+  maxSP1: 00000000000000000000000000000000000000000000000000000000
+  duration1:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  expNeed1: 000000000000000000000000000000000000000000000000
+  costNeed1: 000000000000000000000000000000000000000000000000
+  skill1_recoverType: 0
+  skill1_releaseType: 0
+  skillName2: "\u8001\u5175\u4E0D\u6B7B"
+  description2:
+  - "\u9ED1\u89D2\u6FC0\u53D1\u81EA\u8EAB\u6F5C\u80FD\uFF0C\u5F00\u542F\u6280\u80FD\u77AC\u95F4\u751F\u547D\u503C<color=#FF0000>\u53D8\u4E3A1</color>\uFF0C\u4E14\u6280\u80FD\u6301\u7EED\u671F\u95F4\u751F\u547D\u503C<color=#00BFFF>\u4E0D\u4F1A\u4F4E\u4E8E1</color>\uFF0C\u540C\u65F6\u653B\u51FB\u529B<color=#FF0000>-100%</color>\u3002\u6280\u80FD\u7ED3\u675F\u540E\uFF0C\u9ED1\u89D2\u4F1A<color=#00BFFF>\u6062\u590D</color>\u7B49\u540C\u4E8E\u6280\u80FD\u5F00\u542F\u65F6\u635F\u5931\u7684\u751F\u547D\u503C"
+  - "\u9ED1\u89D2\u6FC0\u53D1\u81EA\u8EAB\u6F5C\u80FD\uFF0C\u5F00\u542F\u6280\u80FD\u77AC\u95F4\u751F\u547D\u503C<color=#FF0000>\u53D8\u4E3A1</color>\uFF0C\u4E14\u6280\u80FD\u6301\u7EED\u671F\u95F4\u751F\u547D\u503C<color=#00BFFF>\u4E0D\u4F1A\u4F4E\u4E8E1</color>\uFF0C\u540C\u65F6\u653B\u51FB\u529B<color=#FF0000>-100%</color>\u3002\u6280\u80FD\u7ED3\u675F\u540E\uFF0C\u9ED1\u89D2\u4F1A<color=#00BFFF>\u6062\u590D</color>\u7B49\u540C\u4E8E\u6280\u80FD\u5F00\u542F\u65F6\u635F\u5931\u7684\u751F\u547D\u503C"
+  - "\u9ED1\u89D2\u6FC0\u53D1\u81EA\u8EAB\u6F5C\u80FD\uFF0C\u5F00\u542F\u6280\u80FD\u77AC\u95F4\u751F\u547D\u503C<color=#FF0000>\u53D8\u4E3A1</color>\uFF0C\u4E14\u6280\u80FD\u6301\u7EED\u671F\u95F4\u751F\u547D\u503C<color=#00BFFF>\u4E0D\u4F1A\u4F4E\u4E8E1</color>\uFF0C\u540C\u65F6\u653B\u51FB\u529B<color=#FF0000>-100%</color>\u3002\u6280\u80FD\u7ED3\u675F\u540E\uFF0C\u9ED1\u89D2\u4F1A<color=#00BFFF>\u6062\u590D</color>\u7B49\u540C\u4E8E\u6280\u80FD\u5F00\u542F\u65F6\u635F\u5931\u7684\u751F\u547D\u503C"
+  - "\u9ED1\u89D2\u6FC0\u53D1\u81EA\u8EAB\u6F5C\u80FD\uFF0C\u5F00\u542F\u6280\u80FD\u77AC\u95F4\u751F\u547D\u503C<color=#FF0000>\u53D8\u4E3A1</color>\uFF0C\u4E14\u6280\u80FD\u6301\u7EED\u671F\u95F4\u751F\u547D\u503C<color=#00BFFF>\u4E0D\u4F1A\u4F4E\u4E8E1</color>\uFF0C\u540C\u65F6\u653B\u51FB\u529B<color=#FF0000>-100%</color>\u3002\u6280\u80FD\u7ED3\u675F\u540E\uFF0C\u9ED1\u89D2\u4F1A<color=#00BFFF>\u6062\u590D</color>\u7B49\u540C\u4E8E\u6280\u80FD\u5F00\u542F\u65F6\u635F\u5931\u7684\u751F\u547D\u503C"
+  - "\u9ED1\u89D2\u6FC0\u53D1\u81EA\u8EAB\u6F5C\u80FD\uFF0C\u5F00\u542F\u6280\u80FD\u77AC\u95F4\u751F\u547D\u503C<color=#FF0000>\u53D8\u4E3A1</color>\uFF0C\u4E14\u6280\u80FD\u6301\u7EED\u671F\u95F4\u751F\u547D\u503C<color=#00BFFF>\u4E0D\u4F1A\u4F4E\u4E8E1</color>\uFF0C\u540C\u65F6\u653B\u51FB\u529B<color=#FF0000>-100%</color>\u3002\u6280\u80FD\u7ED3\u675F\u540E\uFF0C\u9ED1\u89D2\u4F1A<color=#00BFFF>\u6062\u590D</color>\u7B49\u540C\u4E8E\u6280\u80FD\u5F00\u542F\u65F6\u635F\u5931\u7684\u751F\u547D\u503C"
+  - "\u9ED1\u89D2\u6FC0\u53D1\u81EA\u8EAB\u6F5C\u80FD\uFF0C\u5F00\u542F\u6280\u80FD\u77AC\u95F4\u751F\u547D\u503C<color=#FF0000>\u53D8\u4E3A1</color>\uFF0C\u4E14\u6280\u80FD\u6301\u7EED\u671F\u95F4\u751F\u547D\u503C<color=#00BFFF>\u4E0D\u4F1A\u4F4E\u4E8E1</color>\uFF0C\u540C\u65F6\u653B\u51FB\u529B<color=#FF0000>-100%</color>\u3002\u6280\u80FD\u7ED3\u675F\u540E\uFF0C\u9ED1\u89D2\u4F1A<color=#00BFFF>\u6062\u590D</color>\u7B49\u540C\u4E8E\u6280\u80FD\u5F00\u542F\u65F6\u635F\u5931\u7684\u751F\u547D\u503C"
+  - "\u9ED1\u89D2\u6FC0\u53D1\u81EA\u8EAB\u6F5C\u80FD\uFF0C\u5F00\u542F\u6280\u80FD\u77AC\u95F4\u751F\u547D\u503C<color=#FF0000>\u53D8\u4E3A1</color>\uFF0C\u4E14\u6280\u80FD\u6301\u7EED\u671F\u95F4\u751F\u547D\u503C<color=#00BFFF>\u4E0D\u4F1A\u4F4E\u4E8E1</color>\uFF0C\u540C\u65F6\u653B\u51FB\u529B<color=#FF0000>-100%</color>\u3002\u6280\u80FD\u7ED3\u675F\u540E\uFF0C\u9ED1\u89D2\u4F1A<color=#00BFFF>\u6062\u590D</color>\u7B49\u540C\u4E8E\u6280\u80FD\u5F00\u542F\u65F6\u635F\u5931\u7684\u751F\u547D\u503C"
+  initSP2: 00000000000000000000000000000000000000000000000000000000
+  maxSP2: 00000000000000000000000000000000000000000000000000000000
+  duration2:
+  - 8
+  - 10
+  - 12
+  - 14
+  - 16
+  - 18
+  - 20
+  expNeed2: 000000000000000000000000000000000000000000000000
+  costNeed2: 000000000000000000000000000000000000000000000000
+  skill2_recoverType: 2
+  skill2_releaseType: 0

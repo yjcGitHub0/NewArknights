@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2563338211508804214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 824622630865878173}
+  - component: {fileID: 8436965636037779197}
+  m_Layer: 0
+  m_Name: buffManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &824622630865878173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2563338211508804214}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2161963, y: 3.9475594, z: 0.18002671}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8436965636037779197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2563338211508804214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb54adfa34ba1f4c8225c369e17f79a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  giveDamageReduction_pool:
+    prefab: {fileID: 2492347509766097412, guid: 02f0d3f59fb5ef142ade8530502e4556, type: 3}
+  giveDefModification_pool:
+    prefab: {fileID: 1628037848460385764, guid: 1dfca43792d4b554fa9f336b98540b32, type: 3}
+  giveAtkModification_pool:
+    prefab: {fileID: 4136025475701424479, guid: aadd2bdcb7b090f499705e7a80e276a7, type: 3}
+  giveAtkSpeedModification_pool:
+    prefab: {fileID: 7308408725056341789, guid: 6904182f8c65e214b80ed7017cb48ecc, type: 3}
+  giveBlockModification_pool:
+    prefab: {fileID: 4324611069012562751, guid: d533538bb864a4241b7d2ae2d786febc, type: 3}
+  lockLife_pool:
+    prefab: {fileID: 8547165066272647303, guid: 9b8f3510ff14ffd4a943c3bdcbe25591, type: 3}
+  giveStagnation_pool:
+    prefab: {fileID: 2022276040113210073, guid: 0faa1559d4d6aaf42b67d58fa8b08d92, type: 3}
+  giveStealth_pool:
+    prefab: {fileID: 5821277613468511363, guid: 362b0e2c79743f047b107e2576ceb75f, type: 3}

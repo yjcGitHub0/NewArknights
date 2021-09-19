@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711e856df5cc6a64fbd12d1819b750a1, type: 3}
+  m_Name: "\u9E21\u5C3E\u9152\u6295\u63B7\u8005"
+  m_EditorClassIdentifier: 
+  Name: "\u9E21\u5C3E\u9152\u6295\u63B7\u8005"
+  atk: 0
+  def: 500
+  magicDef: 0
+  life: 150
+  consumeBlock: 1
+  minAtkInterval: 2
+  talentDescription: "\u65E0"
+  dropCost: 0
+  dropExp: 0
+  speed: 1
+  fearResistance: 0
+  isDrone: 0
+  headImage: {fileID: 21300000, guid: ca302f66289f3bc4c969aa94ffe9412d, type: 3}
+  enemyPrefab: {fileID: 3602014035755773250, guid: ad6c9704b90e9564db0dc27c071bbba9, type: 3}
+  skillName: "\u72C2\u66B4\u6295\u63B7"
+  startSP: 0
+  maxSP: 0
+  during: 0
+  skillDescription: "\u9E21\u5C3E\u9152\u6295\u63B7\u8005\u7684\u4E0B\u4E00\u6B21\u653B\u51FB\u5C06\u5BF9\u81EA\u8EAB\u653B\u51FB\u8303\u56F4\u5185\u7684\u6240\u6709\u5E72\u5458\u9020\u6210\u4F24\u5BB3"
+  skill_recoverType: 1
