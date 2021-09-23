@@ -22,18 +22,13 @@ public class specialEvent : MonoBehaviour
     {
         bool allFound = true;
         im_.setMp(transform.position,4);
-        for (int i = 0; i < im_.ECList.Count; i++)
-        {
-            if (im_.ECList[i] == null)
-            {
-                im_.ECList.RemoveAt(i);
-                i--;
-            }
-        }
         foreach (var i in im_.ECList)
         {
-            if (!i.gameObject.activeSelf) continue;
-            allFound = allFound & i.changeRoute();
+            foreach (var j in i)
+            {
+                if (!j.gameObject.activeSelf) continue;
+                allFound = allFound & j.changeRoute();
+            }
         }
 
         foreach (var i in im_.blueDoorPathList)
@@ -46,17 +41,12 @@ public class specialEvent : MonoBehaviour
     public void reWallFunction()
     {
         im_.resetMp(transform.position);
-        for (int i = 0; i < im_.ECList.Count; i++)
+        foreach (var i in im_.ECList)
         {
-            if (im_.ECList[i] == null)
+            foreach (var j in i)
             {
-                im_.ECList.RemoveAt(i);
-                i--;
-            }
-            else
-            {
-                if (!im_.ECList[i].gameObject.activeSelf) continue;
-                im_.ECList[i].changeRoute();
+                if (!j.gameObject.activeSelf) continue;
+                j.changeRoute();
             }
         }
     }

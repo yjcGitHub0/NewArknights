@@ -27,7 +27,7 @@ public class currentData : MonoBehaviour
 
     private void Start()
     {
-        if (!transform.parent.CompareTag("operator"))
+        if (!transform.parent.CompareTag("operator") && !transform.parent.CompareTag("box"))
         {
             slot = transform.parent.gameObject;
             dr_ = slot.GetComponent<Drag>();
@@ -41,7 +41,7 @@ public class currentData : MonoBehaviour
         baseBlock = od_.maxBlock;
         baseMaxLife = od_.life;
         maxLevel[0] = od_.maxLevel[0];maxLevel[1] = od_.maxLevel[1]; maxLevel[2] = od_.maxLevel[2];
-        if (!transform.parent.CompareTag("operator"))
+        if (!transform.parent.CompareTag("operator") && !transform.parent.CompareTag("box"))
         {
             dr_.changeText();
         }

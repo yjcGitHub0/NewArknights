@@ -10,7 +10,7 @@ public class Emoji : MonoBehaviour
 
     private void Start()
     {
-        dizzyEmoji = transform.Find("dizzyEmoji").gameObject;
-        fearEmoji = transform.Find("fearEmoji").gameObject;
+        //dizzyEmoji = transform.Find("dizzyEmoji").gameObject;
+        //fearEmoji = transform.Find("fearEmoji").gameObject;
     }
 }

@@ -18,7 +18,7 @@ MonoBehaviour:
   magicDef: 0
   life: 100
   consumeBlock: 1
-  minAtkInterval: 0
+  minAtkInterval: 1.5
   talentDescription: "\u65E0"
   dropCost: 200
   dropExp: 200

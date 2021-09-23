@@ -60,7 +60,8 @@ public class animEvent : MonoBehaviour
         nLPos.z -= 100;
         oc_.transform.position = nPos;
         transform.localPosition = nLPos;
-        oc_.ColorAndRecover(Color.black, 0.3f, false);
+        if(!oc_.is3D)
+            oc_.ColorAndRecover(Color.black, 0.3f, false);
     }
 
     public void idleBegin()

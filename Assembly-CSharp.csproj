@@ -52,6 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\干员模型\a原版干员\克洛斯\kroos_original.cs" />
      <Compile Include="Assets\素材\粒子特效\Epic Toon FX\Demo\Scripts\ETFXLoopScript.cs" />
      <Compile Include="Assets\素材\粒子特效\Epic Toon FX\Scripts\ETFXPitchRandomizer.cs" />
      <Compile Include="Assets\脚本\数值计算\Calculation\atkController.cs" />
@@ -81,10 +82,10 @@
      <Compile Include="Assets\素材\粒子特效\Epic Toon FX\Scripts\ETFXLightFade.cs" />
      <Compile Include="Assets\素材\粒子特效\Epic Toon FX\Demo\Scripts\ETFXButtonScript.cs" />
      <Compile Include="Assets\脚本\场景\UI\elitismMouseEnter.cs" />
-     <Compile Include="Assets\敌人模型\鸡尾酒投掷者\CocktailThrower.cs" />
+     <Compile Include="Assets\敌人模型\整合运动\鸡尾酒投掷者\CocktailThrower.cs" />
      <Compile Include="Assets\脚本\场景\场景加载\AsynchronousSwitch.cs" />
      <Compile Include="Assets\脚本\AudioManager.cs" />
-     <Compile Include="Assets\敌人模型\鸡尾酒投掷者\MolotovCocktail.cs" />
+     <Compile Include="Assets\敌人模型\整合运动\鸡尾酒投掷者\MolotovCocktail.cs" />
      <Compile Include="Assets\脚本\scriOb\levelData.cs" />
      <Compile Include="Assets\脚本\场景\UI\关卡选择\LevelUIController.cs" />
      <Compile Include="Assets\脚本\数值计算\buff\数值增减型\增减防御\giveDefModification.cs" />
@@ -92,6 +93,7 @@
      <Compile Include="Assets\脚本\场景\UI\关卡选择\编队\FormationController.cs" />
      <Compile Include="Assets\素材\粒子特效\Particle Ribbon by Moonflower Carnivore\Scripts\rotation.cs" />
      <Compile Include="Assets\脚本\数值计算\龙门币和经验卡\expController.cs" />
+     <Compile Include="Assets\场景\关卡\最早教程\director_1.cs" />
      <Compile Include="Assets\脚本\数值计算\buff\眩晕类debuff\静滞\眩晕\giveDizzy.cs" />
      <Compile Include="Assets\脚本\干员\colConrtol.cs" />
      <Compile Include="Assets\干员模型\史都华德\二技能特效\steward_skill_1.cs" />
@@ -132,18 +134,21 @@
      <Compile Include="Assets\脚本\敌人\Axing.cs" />
      <Compile Include="Assets\rubbish\Addons\Tilemap\Tiles\Rule Tile\Scripts\RuleTile.cs" />
      <Compile Include="Assets\脚本\数值计算\Calculation\lifeController.cs" />
+     <Compile Include="Assets\素材\地图方块\door\MouseButtonDetail.cs" />
+     <Compile Include="Assets\敌人模型\整合运动\暴徒\thug.cs" />
      <Compile Include="Assets\脚本\场景\UI\gradualChange.cs" />
      <Compile Include="Assets\干员模型\安塞尔\ansel.cs" />
      <Compile Include="Assets\干员模型\安塞尔\anselBandage.cs" />
      <Compile Include="Assets\脚本\数值计算\buff\数值增减型\增减攻速\giveAtkSpeedModification.cs" />
      <Compile Include="Assets\脚本\其他\delayDestroy.cs" />
+     <Compile Include="Assets\敌人模型\指引光粒\guidePoint.cs" />
      <Compile Include="Assets\素材\粒子特效\Particle Ribbon by Moonflower Carnivore\Scripts\ReverseNormals.cs" />
      <Compile Include="Assets\脚本\数值计算\buff\眩晕类debuff\静滞\giveStagnation.cs" />
      <Compile Include="Assets\脚本\scriOb\operData.cs" />
      <Compile Include="Assets\rubbish\Addons\Tilemap\Tiles\Isometric Rule Tile\IsometricRuleTile.cs" />
      <Compile Include="Assets\干员模型\史都华德\steward.cs" />
      <Compile Include="Assets\脚本\干员\模型控制\animEvent.cs" />
-     <Compile Include="Assets\敌人模型\无人机：妖怪\yokai.cs" />
+     <Compile Include="Assets\敌人模型\无人机\妖怪\yokai.cs" />
      <Compile Include="Assets\脚本\gameManager.cs" />
      <Compile Include="Assets\脚本\场景\场景加载\sceneGoOn.cs" />
      <Compile Include="Assets\脚本\干员\模型控制\operControl.cs" />
@@ -153,8 +158,10 @@
      <Compile Include="Assets\脚本\数值计算\buff\隐匿类buff\隐匿\giveStealth.cs" />
      <Compile Include="Assets\素材\粒子特效\Epic Toon FX\Demo\Scripts\ETFXProjectileScript.cs" />
      <Compile Include="Assets\素材\粒子特效\Epic Toon FX\Demo\Scripts\ETFXSceneManager.cs" />
+     <Compile Include="Assets\干员模型\a原版干员\克洛斯\kroosArror_original.cs" />
      <Compile Include="Assets\rubbish\Addons\Tilemap\Tiles\Animated Tile\Scripts\AnimatedTile.cs" />
      <Compile Include="Assets\脚本\运动\parabola.cs" />
+     <Compile Include="Assets\素材\地图方块\door\redDoorUI.cs" />
      <Compile Include="Assets\脚本\场景\UI\图鉴\EnemyIllustratedBook.cs" />
      <Compile Include="Assets\rubbish\Addons\Tilemap\Tiles\Weighted Random Tile\WeightedRandomTile.cs" />
      <Compile Include="Assets\脚本\其他\对象池\pool.cs" />

@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class enemyControl : MonoBehaviour
 {
     [Header("敌人的行动轨迹")] 
+    public int wave;
     public float appearTime;//该敌人出现的时间
     public List<Vector3> pointList = new List<Vector3>();//该敌人的路径锚点(x,y,time,sta)
     public float defaultZ;
@@ -109,8 +110,7 @@ public class enemyControl : MonoBehaviour
         atk_ = Calculations.GetComponent<atkController>();
         def_ = Calculations.GetComponent<defController>();
         sp_ = Calculations.GetComponent<spController>();
-
-        gameObject.SetActive(false);
+        
     }
 
     private void Start()
@@ -123,12 +123,14 @@ public class enemyControl : MonoBehaviour
                 break;
             }
         }
+        gameObject.SetActive(false);
     }
 
     void Registe()
     {
-        
-        im_.ECList.Add(this);
+        while (im_.ECList.Count <= wave) im_.ECList.Add(new List<enemyControl>());
+        im_.ECList[wave].Add(this);
+        im_.totEnemy++;
         if (!im_.EnemyInfoList.Contains(ei_)) im_.EnemyInfoList.Add(ei_);
     }
 

@@ -12,6 +12,7 @@ public class gameManager : MonoBehaviour
     public static initManager im_;
     public Sprite[] professionImage = new Sprite[8];
     public static bool pause;
+    public static bool forcePause;
     public static bool twoFast;
     public static List<operData>[] formation = new List<operData>[4];
 ///////////////////////////////bug表演系要///////////////////////////
@@ -84,6 +85,11 @@ private void Awake()
         pause = true;
         Time.timeScale = 0;
     }
+    public static void ForcePause()
+    {
+        forcePause = true;
+        im_.Pause();
+    }
     public static void EndPause()
     {
         pause = false;
@@ -92,6 +98,11 @@ private void Awake()
     public static void EndPause(Scene arg0, LoadSceneMode arg1)
     {
         EndPause();
+    }
+    public static void EndForcePause()
+    {
+        forcePause = false;
+        im_.Pause();
     }
     public static void TwoFast()
     {

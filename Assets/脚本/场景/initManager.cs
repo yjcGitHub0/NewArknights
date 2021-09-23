@@ -14,12 +14,17 @@ public class initManager : MonoBehaviour
     public float enemyDelay;
     
     [Header("")]
-    
-    
     public List<operData> operList = new List<operData>();
-    public List<enemyControl> ECList = new List<enemyControl>();
+    public List<redDoorUI> redDoorWaveList = new List<redDoorUI>();
+    public List<List<enemyControl>> ECList = new List<List<enemyControl>>();
+    public List<List<guidePoint>> guideList = new List<List<guidePoint>>();
+    private Queue<enemyControl> ECQueue = new Queue<enemyControl>();
+    private Queue<guidePoint> guideQueue = new Queue<guidePoint>();
+    private List<List<string>> redDoorTextList = new List<List<string>>();
+    public List<Image> redDoorSliderImage = new List<Image>();
+    private int wave = -1;
+    private float nxtWaveTime;
     public List<enemyInfo> EnemyInfoList = new List<enemyInfo>();
-    public List<enemyControl> appearOrder = new List<enemyControl>();
     public List<enemyControl> sceneCanAtkEnemyList = new List<enemyControl>();
     
     
@@ -27,6 +32,7 @@ public class initManager : MonoBehaviour
     public GameObject mainCanvas;
     public GameObject operPanel;
     public GameObject camera;
+    public Camera orthoCamera;
     public costController cost_;
     public expController exp_;
 
@@ -68,55 +74,120 @@ public class initManager : MonoBehaviour
 
         foreach (var i in gameManager.formation[gameManager.formationNum])
         {
-            operList.Add(i);
-            GameObject newSlot;
-            newSlot=Instantiate(slot, operPanel.transform, true);
-            newSlot.GetComponent<Drag>().thisOper = i;
-            //newSlot.transform.Find("Data").GetComponent<currentData>().od_ = i;
-            slotList.Add(newSlot);
+            AddNewOperSlot(i);
         }
 
         uc_ = GetComponent<UIconnect>();
     }
-
+    public void AddNewOperSlot(operData od)
+    {
+        operList.Add(od);
+        GameObject newSlot;
+        newSlot=Instantiate(slot, operPanel.transform, true);
+        newSlot.GetComponent<Drag>().thisOper = od;
+        slotList.Add(newSlot);
+    }
 
     void Start()
     {
+        foreach (var i in redDoorWaveList)
+        {
+            i.startButton.onClick.AddListener(NextWaveStart);
+        }
         foreach (var i in ECList)
         {
-            appearOrder.Add(i);
-            if (!startPointList.Contains(i.pointList[0]))
+            List<Dictionary<string, int>> map = new List<Dictionary<string, int>>();
+            redDoorTextList.Add(new List<string>());
+            int lastNum = redDoorTextList.Count - 1;
+            for (int o = 0; o < redDoorWaveList.Count; o++)
             {
-                startPointList.Add(i.pointList[0]);
+                redDoorTextList[lastNum].Add("");
+                map.Add(new Dictionary<string, int>());
             }
+
+            foreach (var j in i)
+            {
+                if (!startPointList.Contains(j.pointList[0]))
+                {
+                    startPointList.Add(j.pointList[0]);
+                }
+                int id = -1;
+                for (int k = 0; k < redDoorWaveList.Count; k++)
+                {
+                    if ((Vector2)redDoorWaveList[k].transform.position == (Vector2)j.transform.position)
+                    {
+                        id = k;
+                        break;
+                    }
+                }
+                if (id != -1)
+                {
+                    if (!map[id].ContainsKey(j.ei_.name)) map[id][j.ei_.name] = 0;
+                    map[id][j.ei_.name]++;
+                }
+            }
+            for (int k = 0; k < redDoorWaveList.Count; k++)
+            {
+                foreach (var o in map[k])
+                {
+                    redDoorTextList[lastNum][k] += o.Key + "x" + o.Value.ToString() + "\n";
+                }
+            }
+            i.Sort((x, y) => x.appearTime.CompareTo(y.appearTime));
         }
-            
-        appearOrder.Sort((x, y) => x.appearTime.CompareTo(y.appearTime));
+        foreach (var i in guideList)
+        {
+            i.Sort((x, y) => x.appearTime.CompareTo(y.appearTime));
+        }
+        NextWaveUI();
+        foreach (var i in redDoorSliderImage)
+        {
+            i.fillAmount = 1;
+        }
 
         cost_ = GetComponent<costController>();
         exp_ = GetComponent<expController>();
-        totEnemy = ECList.Count;
         life = maxLife;
         timeLine = -enemyDelay;
 
         IllustratedBookManager.ChangeBookPrefab(gameManager.formation[gameManager.formationNum], EnemyInfoList);
+        
     }
 
     private void Update()
     {
-        timeLine += Time.deltaTime;
-        //怪物生成时间轴
-        while (appearOrder.Count > 0 && timeLine >= appearOrder[0].appearTime)
-        {
-            appearOrder[0].gameObject.SetActive(true);
-            sceneCanAtkEnemyList.Add(appearOrder[0]);
-            appearOrder[0].enemyDie += DoWhenEnemyDie;
-            appearOrder.RemoveAt(0);
-        }
-        
         //相机旋转
         camera.transform.rotation= Quaternion.Slerp(camera.transform.rotation,tarRol , rolSpeed);
         camera.transform.position = Vector3.MoveTowards(camera.transform.position, tarPos, rolSpeed * 5);
+        
+        if (wave == -1) return;
+        timeLine += Time.deltaTime;
+        //怪物生成时间轴
+        while (ECQueue.Count > 0 && timeLine >= ECQueue.Peek().appearTime)
+        {
+            enemyControl ec = ECQueue.Dequeue();
+            ec.gameObject.SetActive(true);
+            sceneCanAtkEnemyList.Add(ec);
+            ec.enemyDie += DoWhenEnemyDie;
+            if (ECQueue.Count == 0)
+                NextWaveUI();
+        }
+        while (guideQueue.Count > 0 && timeLine >= guideQueue.Peek().appearTime)
+        {
+            guidePoint gp = guideQueue.Dequeue();
+            gp.gameObject.SetActive(true);
+        }
+        
+        //下一波开始倒计时
+        if (ECQueue.Count == 0 && wave < ECList.Count)
+        {
+            nxtWaveTime += Time.deltaTime;
+            foreach (var i in redDoorSliderImage)
+            {
+                i.fillAmount = nxtWaveTime / 60;
+            }
+            if (nxtWaveTime >= 10) NextWaveStart();
+        }
     }
     
     public static float FixCoordinate(float x)
@@ -196,7 +267,7 @@ public class initManager : MonoBehaviour
             pauseButton.image.sprite = pauseRecoverSprite;
             gameManager.Pause();
         }
-        else
+        else if(!gameManager.forcePause)
         {
             pauseButton.image.sprite = pauseSprite;
             gameManager.EndPause();
@@ -222,9 +293,53 @@ public class initManager : MonoBehaviour
         uc_.ShowMessage(s);
     }
 
+    private void NextWaveUI()
+    {
+        int nwave = wave + 1;
+        if (nwave >= ECList.Count) return;
+
+        nxtWaveTime = 0;
+        for (int i = 0; i < redDoorTextList[nwave].Count; i++)
+        {
+            var s = redDoorTextList[nwave][i];
+            if (s == "") continue;
+            redDoorWaveList[i].gc_.Show();
+            redDoorWaveList[i].detailText.text = s;
+        }
+        
+    }
+    public void NextWaveStart()
+    {
+        wave++;
+        if (wave >= ECList.Count) return;
+        timeLine = 0;
+        ECQueue.Clear();
+        guideQueue.Clear();
+        
+        foreach (var i in redDoorWaveList)
+        {
+            i.gc_.Hide();
+        }
+        
+        
+        
+        foreach (var i in ECList[wave])
+        {
+            ECQueue.Enqueue(i);
+        }
+        if (wave >= guideList.Count) return;
+        foreach (var i in guideList[wave])
+        {
+            guideQueue.Enqueue(i);
+        }
+
+        
+    }
+
     void DoWhenEnemyDie(enemyControl ec)
     {
         sceneCanAtkEnemyList.Remove(ec);
+        ECList[ec.wave].Remove(ec);
     }
 }
 

@@ -23,12 +23,12 @@ public class buttons : MonoBehaviour
     public void safeBotton()
     {
         oc_.dontCloseSUI();
-        Debug.Log(11);
     }
 
     public void openBotton()
     {
         oc_.OpenSUI();
+        if (od_.Selected.Count == 0) return;
         int index = Random.Range(0, od_.Selected.Count);
         AudioManager.OperatorTalk(od_.Selected[index]);
     }

@@ -125,6 +125,7 @@ public class operControl : MonoBehaviour
         uc_ = im_.uc_;
         priority = im_.priority++;
         specialIn();
+        if (od_.Deploy.Count == 0) return;
         int index = Random.Range(0, od_.Deploy.Count);
         AudioManager.OperatorTalk(od_.Deploy[index]);
     }
